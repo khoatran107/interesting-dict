@@ -26,7 +26,7 @@ form.onsubmit = (e) => {
       p1.then(() => {
         for (let i = 0, p = Promise.resolve(); i < numChar; i++) {
           const char = tiengTrungCharacters[i];
-          const proxyURL = "http://localhost:443/";
+          const proxyURL = 'https:' + window.location.href.split(':')[1] + '/';
           const tuDienURL =
             "https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-";
           p.then(() => {
